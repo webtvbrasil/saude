@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ID do Vídeo do YouTube
     const videoId = 'qYC2IBnF48s'; // Substitua pelo novo ID do vídeo
 
-    const titulo = '0000000';
+    const titulo = 'Reverta sua <span class="orange-text">Diabetes Tipo 2</span> de forma natural!';
 
     // Link do Botão de Checkout
     const checkoutLink = 'https://pay.kiwify.com.br/4K0A9aJ'; // Substitua pelo novo link de checkout
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const titulo = document.querySelector('.headline');
     if (titulo) {
-        titulo.textContent = `Reverta sua <span class="orange-text">Diabetes Tipo 2</span> de forma natural!`;
+        titulo.textContent = titulo;
     }
 
     // 1. Alterar o ID do Vídeo
@@ -38,3 +38,4 @@ document.addEventListener('DOMContentLoaded', function() {
         whatsappButton.href = whatsappLink;
     }
 });
+
