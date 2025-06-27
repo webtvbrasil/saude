@@ -1,1 +1,324 @@
+/* Cores */
+:root {
+    --marrom-glace: #331e0f; /* Cor marrom glacê */
+    --laranja-destaque: #ff8c00; /* Laranja para destaque */
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza-claro: #f0f0f0;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--marrom-glace);
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal */
+.container {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid var(--branco);
+    border-radius: 10px;
+    animation: fadeUp 0.5s ease-out;
+}
+
+/* Headline */
+.headline {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--branco);
+    animation: fadeUp 0.7s ease-out;
+}
+
+.orange-text {
+    color: var(--laranja-destaque);
+}
+
+/* Sub-headline */
+.sub-headline {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: var(--branco);
+    animation: fadeUp 0.9s ease-out;
+}
+
+/* Vídeo de Vendas */
+.video-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: fadeUp 1.1s ease-out;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.watching-text {
+    color: var(--vermelho);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9em;
+    animation: fadeUp 1.3s ease-out;
+}
+
+/* Botão Temporizado */
+.cta-button {
+    background-color: var(--laranja-destaque);
+    color: var(--branco);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+    animation: fadeUp 1.5s ease-out;
+}
+
+.cta-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Descrição do Produto */
+.product-description {
+    background-color: rgba(51, 30, 15, 0.5);
+    color: var(--branco);
+    font-size: 1.25em;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 900px;
+    animation: fadeUp 1.7s ease-out;
+}
+
+/* Benefícios e Objeções */
+.benefits, .objections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    animation: fadeUp 1.9s ease-out;
+}
+
+.benefit-card, .objection-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.benefit-card i, .objection-card i {
+    font-size: 2em;
+    color: var(--laranja-destaque);
+}
+
+/* Depoimentos */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    animation: fadeUp 2.1s ease-out;
+}
+
+.testimonial-video {
+    width: 300px;
+    border: 7px solid var(--branco);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Garantia */
+.guarantee {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    margin: 20px auto;
+    animation: fadeUp 2.3s ease-out;
+}
+
+.guarantee i {
+    margin-right: 10px;
+}
+
+/* FAQ */
+.faq {
+    margin-top: 30px;
+    width: 100%;
+    animation: fadeUp 2.5s ease-out;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-question i {
+    margin-right: 10px;
+    color: var(--laranja-destaque);
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+/* Chat Fake */
+.chat-fake {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 700px;
+    animation: fadeUp 2.7s ease-out;
+}
+
+.chat-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.chat-messages p {
+    margin-bottom: 5px;
+}
+
+.chat-fake input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.disclaimer {
+    font-size: 0.8em;
+    margin: 0 25px;
+}
+
+/* Chat Flutuante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Notificações Fake */
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notification {
+    background-color: rgba(0, 128, 0, 0.8);
+    color: var(--branco);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Animações */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .headline {
+        font-size: 2em;
+    }
+    .sub-headline {
+        font-size: 1em;
+    }
+    .benefits, .objections, .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefit-card, .objection-card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .testimonial-video {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .chat-fake {
+        width: 90%;
+    }
+    .guarantee {
+        width: 90%;
+    }
+}
 
